@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lj.translatedownanimationdemo.MainActivity">
+
+    <Button
+        android:id="@+id/start_animation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start_animation"
+        android:onClick="startAnimation"
+        />
+
+
+    <View
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/start_animation"
+        android:background="#ffffff"
+        android:id="@+id/vertical_line"
+        android:layout_width="3px"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30dp"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_below="@+id/start_animation"
+        android:background="@color/colorPrimary"
+        android:id="@+id/vertical_line1"
+        android:layout_width="3px"
+        android:layout_marginRight="30dp"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_toRightOf="@id/vertical_line1"
+        android:layout_below="@+id/start_animation"
+        android:background="#ffffff"
+        android:id="@+id/vertical_line2"
+        android:layout_width="3px"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30dp"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_toRightOf="@id/vertical_line2"
+        android:layout_below="@+id/start_animation"
+        android:background="#ffffff"
+        android:id="@+id/vertical_line3"
+        android:layout_width="3px"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+</RelativeLayout>
